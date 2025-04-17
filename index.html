@@ -4,8 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shrinivas</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon-3.ico">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Welcome to heaven!</h2>
+    <nav class="navbar" id="navbar">
+        <a href="#about">Home</a>
+        <a href="#about">About</a>
+        <a href="#project-div">Projects</a>
+        <a href="#skills-div">Skills</a>
+        <a href="#links-div">Links</a>
+    </nav>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <nav class="navbar-responsive" id="navbar-responsive">
+        <div class="menu-icon" id="menu-icon-responsive" style="padding-bottom: 10px;">&#9776;</div>
+        <a href="#menu-icon" onclick="onclickLink()">Home</a>
+        <a href="#about" onclick="onclickLink()">About</a>
+        <a href="#project-div" onclick="onclickLink()">Projects</a>
+        <a href="#skills-div" onclick="onclickLink()">Skills</a>
+        <a href="#links-div" onclick="onclickLink()">Links</a>
+    </nav>
+    <main>
+        <br/>
+        <strong class="fira-code-font" id="intro"></strong>
+        <br/>
+        <h3 id="about">About</h3>
+        <p>I'm a curious developer with practical experience in projects across different domains. 
+            Currently I'm pursuing bachelors in computer science with expected completion in mid of 2025.
+        </p>
+        <br/>
+        <h3>Projects</h3>
+        <div class="project-div" id="project-div">
+            <div class="project-card">
+                <h4 class="project-card-title"><a href="https://github.com/Shrini3/stackoverflow-server" rel="noreferrer noopener" target="_blank">Stack Overflow Clone</a></h4>
+                <p>I made a clone website of stack overflow by implementing
+                    the same features in the clone project.
+                </p>
+                <div class="techstack-div">
+                    <p class="techstack-btn">React</p>
+                    <p class="techstack-btn">Express</p>
+                    <p class="techstack-btn">MongoDB</p>
+                    <p class="techstack-btn">React Router</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <h4 class="project-card-title"><a href="https://supplychainmanager.netlify.app" rel="noreferrer noopener" target="_blank">Supply Chain Manager</a></h4>
+                <p>A blockchain based supply chain management tool to store
+                    supply chain data on blockchain to enhance security and
+                    transparency.
+                </p>
+                <div class="techstack-div">
+                    <p class="techstack-btn">React</p>
+                    <p class="techstack-btn">Solidity</p>
+                    <p class="techstack-btn">Truffle</p>
+                    <p class="techstack-btn">Web3.js</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        <h3>Skills</h3>
+        <div class="skills-div" id="skills-div">
+            <h4>Languages</h4>
+            <div class="skills-row" id="skills-row-1">
+                <div class="skills-card">HTML</div>
+                <div class="skills-card">CSS</div>
+                <div class="skills-card">Javascript</div>
+                <div class="skills-card">Java</div>
+                <div class="skills-card">Python</div>   
+                <div class="skills-card">C#</div>   
+                <div class="skills-card">Solidity</div>   
+                <div class="skills-card">Go</div>   
+            </div>
+            <h4>Frameworks</h4>
+            <div class="skills-row" id="skills-row-2">
+                <div class="skills-card">Express.js</div>
+                <div class="skills-card">ASP.NET</div>
+                <div class="skills-card">Vite.js</div> 
+                <div class="skills-card">Truffle</div> 
+            </div>
+            <h4>Libraries</h4>
+            <div class="skills-row" id="skills-row-3">
+                <div class="skills-card">React</div>
+                <div class="skills-card">React Router</div>
+                <div class="skills-card">Node.js</div> 
+                <div class="skills-card">Redux</div> 
+            </div>
+            <h4>Tools and Databases</h4>
+            <div class="skills-row" id="skills-row-4">
+                <div class="skills-card">Git</div>
+                <div class="skills-card">Github</div>
+                <div class="skills-card">VS Code</div> 
+                <div class="skills-card">Postman</div> 
+                <!-- <div class="skills-card">WSL</div>  -->
+                <div class="skills-card">Docker</div> 
+                <div class="skills-card">Ganache</div> 
+                <div class="skills-card">SQL</div> 
+                <div class="skills-card">MSSQL</div> 
+                <div class="skills-card">MongoDB</div> 
+            </div>
+        </div>
+        <br />
+        <h3>Let's Connect</h3>
+        <div class="links-div" id="links-div">
+            <div class="link-btn"><img src="/public/icons8-github-logo-48.png" height="30px" width="30px"/><a href="https://github.com/Shrini3" target="_blank" rel="noreferrer noopener">Github</a></div>
+            <div class="link-btn"><img src="/public/icons8-x-logo-50.png" height="30px" width="30px"/><a href="https://x.com/Shrini092" target="_blank" rel="noreferrer noopener">X</a></div>
+            <div class="link-btn"><img src="/public/icons8-linkedin-logo-48.png" height="30px" width="30px"/><a href="https://www.linkedin.com/in/shrinivas-u-b28a61227" target="_blank" rel="noreferrer noopener">LinkedIn</a></div>
+            <!-- <div class="link-btn">Email</div> -->
+        </div>
+    </main>
+    
+    <script src="index.js"></script>
 </body>
 </html>
